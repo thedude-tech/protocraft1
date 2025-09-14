@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [node name="HUD" type="Control"]
-script = ExtResource("res://ui/hud.gd")
+script = ExtResource("res://ui/HUD.cs")
 
 [node name="Label" type="Label" parent="."]
 text = "HUD Placeholder"

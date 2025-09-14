@@ -1,7 +1,7 @@
 [gd_scene format=3]
 
 [node name="PauseMenu" type="Control"]
-script = ExtResource("res://ui/pause_menu.gd")
+script = ExtResource("res://ui/PauseMenu.cs")
 
 [node name="Label" type="Label" parent="."]
 text = "Pause Menu Placeholder"
