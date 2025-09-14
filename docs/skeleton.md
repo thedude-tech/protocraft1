@@ -22,7 +22,17 @@ This file is the **single source of truth** for scene hierarchy.
 
 ## ui/pause_menu.tscn
 - PauseMenu (Control)
-  - Label (Label) [text = "Pause Menu Placeholder"]
+  - VBoxContainer (VBoxContainer)
+    - Resume (Button)
+    - Save (Button)
+    - Quit (Button)
+
+## ui/main_menu.tscn
+- MainMenu (Control)
+  - VBoxContainer (VBoxContainer)
+    - NewGame (Button)
+    - LoadGame (Button)
+    - Quit (Button)
 
 ## Player.tscn
 - Player (CharacterBody3D)

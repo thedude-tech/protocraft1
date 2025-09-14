@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=4 format=3 uid="uid://b7te53gnkn622"]
 
-[ext_resource type="Script" path="res://scripts/Player.cs" id=1]
+[ext_resource type="Script" uid="uid://mlqua4tjgax4" path="res://scripts/Player.cs" id="1"]
 
-[sub_resource type="CapsuleShape3D" id=1]
-radius = 0.5
+[sub_resource type="CapsuleShape3D" id="1"]
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="2"]
 height = 1.8
 
 [node name="Player" type="CharacterBody3D"]
@@ -13,11 +15,8 @@ script = ExtResource("1")
 shape = SubResource("1")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = CapsuleMesh {
-    radius = 0.5
-    height = 1.8
-}
+mesh = SubResource("2")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-current = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
+current = true
