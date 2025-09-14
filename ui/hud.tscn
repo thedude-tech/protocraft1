@@ -1,7 +1,12 @@
-[gd_scene format=3]
+[gd_scene load_steps=2 format=3 uid="uid://c6lhgdom7ivlw"]
+
+[ext_resource type="Script" uid="uid://kc0u2e5t5upr" path="res://ui/HUD.cs" id="1"]
 
 [node name="HUD" type="Control"]
-script = ExtResource("res://ui/HUD.cs")
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1")
 
 [node name="Label" type="Label" parent="."]
+layout_mode = 0
 text = "HUD Placeholder"

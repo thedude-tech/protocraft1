@@ -1,21 +1,31 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=6 format=3 uid="uid://wltda6epau5m"]
+
+[ext_resource type="Script" uid="uid://bj8e34jq113k1" path="res://scripts/Main.cs" id="1"]
+[ext_resource type="Script" uid="uid://mlqua4tjgax4" path="res://scripts/Player.cs" id="2"]
+[ext_resource type="Script" uid="uid://cjp7a5lhemltw" path="res://scripts/World.cs" id="3"]
+[ext_resource type="Script" uid="uid://kc0u2e5t5upr" path="res://ui/HUD.cs" id="4"]
+[ext_resource type="Script" uid="uid://jp5l32afo4va" path="res://ui/PauseMenu.cs" id="5"]
 
 [node name="Main" type="Node"]
-script = ExtResource("res://scripts/Main.cs")
+script = ExtResource("1")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-script = ExtResource("res://scripts/Player.cs")
+script = ExtResource("2")
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
 current = true
 
 [node name="World" type="Node3D" parent="."]
-script = ExtResource("res://scripts/World.cs")
+script = ExtResource("3")
 
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="HUD" type="Control" parent="UI"]
-script = ExtResource("res://ui/HUD.cs")
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("4")
 
 [node name="PauseMenu" type="Control" parent="UI"]
-script = ExtResource("res://ui/PauseMenu.cs")
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("5")

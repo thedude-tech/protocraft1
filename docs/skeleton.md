@@ -8,6 +8,8 @@ This file is the **single source of truth** for scene hierarchy.
 ## main.tscn
 - Main (Node)
   - Player (CharacterBody3D)
+    - CollisionShape3D (Capsule)
+    - MeshInstance3D (CapsuleMesh)
     - Camera3D (Camera3D) [current = true]
   - World (Node3D)
   - UI (CanvasLayer)
@@ -21,3 +23,9 @@ This file is the **single source of truth** for scene hierarchy.
 ## ui/pause_menu.tscn
 - PauseMenu (Control)
   - Label (Label) [text = "Pause Menu Placeholder"]
+
+## Player.tscn
+- Player (CharacterBody3D)
+  - CollisionShape3D (Capsule)
+  - MeshInstance3D (CapsuleMesh)
+  - Camera3D (Camera3D) [current = true]
