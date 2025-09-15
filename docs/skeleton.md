@@ -1,41 +1,20 @@
 # Skeleton (ProtoCraft)
 
-⚠️ RULE: If the node structure changes, regenerate this file and commit a new version.  
-This file is the **single source of truth** for scene hierarchy.
-
----
-
 ## main.tscn
 - Main (Node)
   - Player (CharacterBody3D)
-    - CollisionShape3D (Capsule)
-    - MeshInstance3D (CapsuleMesh)
-    - Camera3D (Camera3D) [current = true]
   - World (Node3D)
   - UI (CanvasLayer)
     - HUD (Control)
     - PauseMenu (Control)
+    - MainMenu (Control)
 
-## ui/hud.tscn
-- HUD (Control)
-  - Label (Label) [text = "HUD Placeholder"]
-
-## ui/pause_menu.tscn
-- PauseMenu (Control)
-  - VBoxContainer (VBoxContainer)
-    - Resume (Button)
-    - Save (Button)
-    - Quit (Button)
-
-## ui/main_menu.tscn
-- MainMenu (Control)
-  - VBoxContainer (VBoxContainer)
-    - NewGame (Button)
-    - LoadGame (Button)
-    - Quit (Button)
-
-## Player.tscn
+## player.tscn
 - Player (CharacterBody3D)
-  - CollisionShape3D (Capsule)
-  - MeshInstance3D (CapsuleMesh)
-  - Camera3D (Camera3D) [current = true]
+  - CollisionShape3D
+  - MeshInstance3D
+  - Camera3D
+
+## World.tscn
+- World (Node3D)
+  - (generated chunks at runtime)
