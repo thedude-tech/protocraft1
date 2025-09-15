@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbkf0vcjkv3am"]
+[gd_scene load_steps=2 format=3 uid="uid://ct0unqs1gmvp"]
 
-[ext_resource type="Script" uid="uid://buxasplb5nvx6" path="res://scripts/MainMenu.cs" id="1"]
-[ext_resource type="PackedScene" uid="uid://wltda6epau5m" path="res://main.tscn" id="2_rn8js"]
+[ext_resource type="Script" uid="uid://dtmj8c7v8ane5" path="res://ui/MainMenu.cs" id="1"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -21,23 +20,21 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -191.0
-offset_top = -142.5
-offset_right = 191.0
-offset_bottom = 142.5
+offset_left = -223.5
+offset_top = -50.5
+offset_right = 223.5
+offset_bottom = 50.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="NewGame" type="Button" parent="VBoxContainer"]
+[node name="NewGameButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "New Game"
 
-[node name="Main" parent="VBoxContainer/NewGame" instance=ExtResource("2_rn8js")]
-
-[node name="LoadGame" type="Button" parent="VBoxContainer"]
+[node name="LoadGameButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Load Game"
 
-[node name="Quit" type="Button" parent="VBoxContainer"]
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Quit"

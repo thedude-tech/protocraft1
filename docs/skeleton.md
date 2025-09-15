@@ -1,20 +1,15 @@
 # Skeleton (ProtoCraft)
 
-## main.tscn
+## Main Menu
+- MainMenu (Control)
+  - VBoxContainer
+    - NewGameButton (Button)
+    - LoadGameButton (Button)
+    - QuitButton (Button)
+
+## Main Scene
 - Main (Node)
-  - Player (CharacterBody3D)
-  - World (Node3D)
-  - UI (CanvasLayer)
-    - HUD (Control)
-    - PauseMenu (Control)
-    - MainMenu (Control)
-
-## player.tscn
-- Player (CharacterBody3D)
-  - CollisionShape3D
-  - MeshInstance3D
-  - Camera3D
-
-## World.tscn
-- World (Node3D)
-  - (generated chunks at runtime)
+  - World (instance of World.tscn)
+  - Player (instance of Player.tscn)
+  - HUD (instance of HUD.tscn)
+  - PauseMenu (instance of PauseMenu.tscn)
