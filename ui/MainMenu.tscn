@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ct0unqs1gmvp"]
 
-[ext_resource type="Script" uid="uid://dtmj8c7v8ane5" path="res://ui/MainMenu.cs" id="1"]
+[ext_resource type="Script" uid="uid://bcknk1oyknn6w" path="res://ui/MainMenu.gd" id="1_b00nv"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ offset_left = -180.0
 offset_top = -149.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1")
+script = ExtResource("1_b00nv")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

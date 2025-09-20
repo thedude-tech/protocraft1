@@ -1,3 +1,0 @@
-using Godot; 
-public partial class PauseMenu : Control 
-{ public override void _Ready(){ GD.Print("PauseMenu ready"); } }
